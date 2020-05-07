@@ -1,0 +1,105 @@
+/* Inspired by https://codepen.io/kymarkak/pen/MJOzYy?q=taco&limit=all&type=type-pens */
+body {
+  background:#98FB98;
+}
+
+.taco {
+  position: relative;
+  margin: 0 auto;
+  width: 600px;
+  height: 400px;
+}
+
+/* Taco Shell */
+.shell {
+  position: absolute;
+  left: 37%;
+  top: 15%;
+  width: 33%;
+  height: 40%;
+  background: #F0E68C;
+  border-radius: 75% 75% 35% 15%;
+}
+
+.shell::before {
+  content: "";
+  position: absolute;
+  left: -20%;
+  width: 100%;
+  height: 100%;
+  background: #F0E68C;
+  border-radius: 75% 75% 2% 35%;
+  z-index: 10;
+}
+
+.shell::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 3%;
+  height: 4%;
+  color: #F0E68C;
+  border-radius: 40%;
+  z-index: 10;
+}
+
+/* Lettuce */
+.lettuce {
+  position: absolute;
+  width: 98%;
+  height: 100%;
+  background: green;
+  border-radius: 30% 58%;
+}
+
+.lettuce::before {
+  content: "";
+  position: absolute;
+  height: 4%;
+  width: 15%;
+  color: green;
+  border-radius: 40% 45% 40% 50%;
+}
+
+/*meat */
+.meat {
+  background: #8B4513;
+  position: absolute;
+  bottom: 2%;
+  right: 2%;
+  width: 40%;
+  height: 40%;
+  border-radius: 0 30% 55% 0;
+}
+
+.meat::before {
+  content: "";
+  position: absolute;
+  height: 5%;
+  width: 5%;
+  border-radius: 60% 40%;
+}
+
+/* Tomato */
+.tomato {
+  position: absolute;
+  top: 30%;
+  right: 15%;
+  width: 10%;
+  height: 10%;
+  border-radius: 60% 40%;
+  background: red;
+  box-shadow: 0 24px 0 12px rgba(196, 55, 42, 1), -10px -10px 0 5px rgba(196, 55, 42, .9), -55px -43px 0 5px rgba(196, 55, 42, .9);
+}
+
+/* cheese */
+.cheese {
+  position: absolute;
+  top: 30%;
+  right: 15%;
+  width: 15%;
+  height: 3%;
+  border-radius: 30%;
+  background: yellow;
+  box-shadow: 10px 10px 0 0 rgb(246, 205, 26), -17px -20px 0 0 rgb(246, 205, 26), 15px 0 0 0 rgb(246, 205, 26), -25px -30px 0 0 rgb(246, 205, 26), -39px -38px 0 0 rgb(246, 205, 26), -60px -45px 0 0 rgb(246, 205, 26);
+}
